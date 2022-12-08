@@ -1,0 +1,17 @@
+year = int(input("Which year do you want to check? "))
+
+#Nested statements to check if all requirements are met.
+#Flow chart: Recommended:-
+#link: https://bit.ly/36BjS2D
+#My link: https://drive.google.com/file/d/1mbTr6gsiZQHnO3WSvL2tVXybMZzLb5A0/view
+
+if year % 4 == 0:
+  if year % 100 == 0:
+    if year % 400 == 0:
+      print("Leap year.")
+    else:
+      print("Not leap year.")
+  else:
+    print("Leap year.")
+else:
+  print("Not leap year.")
